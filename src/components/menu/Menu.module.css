@@ -1,0 +1,122 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 50vw;
+    height: 100%;
+    background: #2B2D31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.menu.opened {
+    transform: translateX(0%);
+}
+
+.menu_content {
+    width: 422px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.input_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome_font {
+    width: 53px;
+    font-size: 16px;
+    line-height: 19.36px;
+    color:#FFFFFF;
+    height: 19px;
+}
+
+.nome_content {
+    height: 48px;
+    padding: 10px 16px 10px 16px;
+    margin-top: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px;
+    background: #35373C;
+    border: 1px solid #535353;
+    color:#FFFFFF;
+}
+
+.textarea_desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc_font {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.desc_content {
+    height: 168px;
+    padding: 10px 16px 10px 16px;
+    margin-top: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px;
+    background: #35373C;
+    border: 1px solid #535353;
+    color:#FFFFFF;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.fechar {
+    width: 85px;
+    height: 56px;
+    padding: 10px 16px 10px 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    background-color: #2B2D31;
+    color:#FFFFFF;
+    cursor: pointer
+}
+
+.fechar:hover {
+    border-radius: 8px;
+    background: #444444; 
+}
+
+.salvar {
+    width: 164px;
+    height: 56px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    background: #1D46CA;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.salvar:hover{
+    background: #11276E;
+}
