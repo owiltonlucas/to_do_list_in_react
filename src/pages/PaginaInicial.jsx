@@ -1,8 +1,18 @@
-import React from 'react'
-import Logo from '../../assets/Logo.svg'
-import styles from './Empty_state.module.css'
 
-const Empty_state = () => {
+import React from 'react'
+import { useState } from 'react'
+
+import Logo from '../assets/Logo.svg'
+import styles from './PaginaInicial.module.css'
+
+const PaginaInicial = () => {
+
+    const [menu, setMenu] = useState(false)
+
+    function openForm() {
+        setMenu(true)
+    }
+
   return (
     <>
         <div className={styles.logo}>
@@ -16,7 +26,7 @@ const Empty_state = () => {
             <p className={styles.p2}>Não se preocupe, suas novas tarefas irão aparecer aqui.</p>
         </div>
 
-        <button className={styles.button}>
+        <button className={styles.button} onClick={openForm}>
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.5 12.5H18.5" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M12.5 18.5V6.5" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,4 +37,4 @@ const Empty_state = () => {
   )
 }
 
-export default Empty_state
+export default PaginaInicial

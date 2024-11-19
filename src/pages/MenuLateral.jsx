@@ -1,8 +1,8 @@
-import styles from './Menu.module.css'
-import Closed from '../../assets/Vector.svg'
+import styles from './MenuLateral.module.css'
+import Closed from '../assets/Vector.svg'
 import React from 'react'
 
-const Menu = () => {
+const MenuLateral = () => {
   return (
     <div className={styles.menu}>
         <button className={styles.closed}>
@@ -30,4 +30,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuLateral

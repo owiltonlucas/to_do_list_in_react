@@ -1,12 +1,13 @@
 import './App.css';
-import Menu from './components/menu/Menu';
-import Empty_state from './components/tela_inicial/Empty_state';
+import MenuLateral from './pages/MenuLateral'
+import PaginaInicial from './pages/PaginaInicial';
+
 
 function App() {
   return(
     <div>
-      <Empty_state />
-      <Menu />
+      <PaginaInicial />
+      <MenuLateral />
     </div>
   )
 }
